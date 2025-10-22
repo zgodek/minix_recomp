@@ -1,5 +1,5 @@
 Zadanie 1 polegało na znalezieniu numer id procesu, który zawiera najwięcej potomnych procesów.
-Zadanie 2 miało to samo na celu, ale dodatkowo należy pominąć proces o id podanym jako jeden z agrumentów na wejściu. 
+Zadanie 2 miało to samo na celu, ale dodatkowo należało pominąć proces o id podanym jako jeden z agrumentów na wejściu. 
 
 Folder zawierający to README jest odpowiednikiem roota Minixa. Znajduje się tu folder usr/ z modyfikowanymi plikami jądra Minixa, a także folder z testami o nazwie tests/.
 
