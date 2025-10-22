@@ -1,0 +1,6 @@
+#!/bin/sh
+
+for var in "$@"
+do
+    ./times_called $var &
+done

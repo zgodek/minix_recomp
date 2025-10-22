@@ -1,0 +1,10 @@
+#!/bin/sh
+
+sh crt_proc_CALC &
+sh crt_proc_CALC &
+sh crt_proc_CALC &
+
+sh crt_proc_INTER
+
+
+

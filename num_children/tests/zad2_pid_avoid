@@ -1,0 +1,19 @@
+#!/bin/sh
+cc procs2.c -o procs2 
+cc test_sysc2.c -o test_sysc2
+
+#pierwsze uruchomienie wywolania systemowego do pozniejszego porownania, bez pid na do pominiecia
+./test_sysc2 
+
+if [ -z "$1" ]
+then
+	./procs2 &
+else
+	./procs2 "$1" &
+fi
+
+#wywolanie systemowe bez pid do pominiecia
+./test_sysc2 &
+
+#rownoczesne wywolanie systemowe z pid do pominiecia rownym 1
+./test_sysc2 1

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+./crt_proc &
+export pidIO=$!
+
+./change_group $pidIO 0

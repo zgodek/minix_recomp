@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sh crt_proc_INTER &
+sh crt_proc_INTER &
+sh crt_proc_INTER

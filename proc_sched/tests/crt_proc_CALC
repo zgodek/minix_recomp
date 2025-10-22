@@ -1,0 +1,6 @@
+#!/bin/sh
+
+./crt_proc &
+export pidCALC=$!
+
+./change_group $pidCALC 1

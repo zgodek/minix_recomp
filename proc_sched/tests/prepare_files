@@ -1,0 +1,19 @@
+#!/bin/sh
+cc crt_proc.c -o crt_proc
+cc times_called.c -o times_called
+cc change_group.c -o change_group
+
+chmod +x crt_proc_INTER
+chmod +x crt_proc_CALC
+chmod +x crt_proc_IO
+
+chmod +x kill_procs
+chmod +x tc_procs
+
+chmod +x test1
+chmod +x test2
+chmod +x test3
+chmod +x test4
+chmod +x test5
+chmod +x test6
+chmod +x test7

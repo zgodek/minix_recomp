@@ -1,0 +1,19 @@
+#!/bin/sh
+cc test_sysc1.c -o test_sysc1 #program tworzacy zadana liczbe dzieci nowego procesu
+
+cc procs1.c -o procs1 #program uruchamiajacy wywolanie systemowe
+
+#pierwsze uruchomienie wywolania systemowego do pozniejszego porownania
+./test_sysc1
+
+if [ -z "$1" ]
+then
+	#stworzenie domyslnej ilosci dzieci rownej 10
+	./procs1 & 
+else
+	#stworzenie zadanej ilosci dzieci 
+	./procs1 "$1" &
+fi
+
+#uruchomienie wywolania systemowego
+./test_sysc1 

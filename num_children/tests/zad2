@@ -1,0 +1,20 @@
+#!/bin/sh
+cc procs2.c -o procs2  #program tworzacy sciezke procesow o zadanej dlugosci 
+cc test_sysc2.c -o test_sysc2 #program do wywolania systemowego
+
+#wywolanie systemowe bez pid procesu do pominiecia
+./test_sysc2
+
+if [ -z "$1" ]
+then
+	#stworzenie sciezki procesow o domyslnej dlugosci rownej 5
+	./procs2 &
+else
+	#stworzenie sciezki procesow o zadanej dlugosci
+	./procs2 "$1" &
+fi
+
+#ponowne wywolanie systemowe 
+./test_sysc2
+
+

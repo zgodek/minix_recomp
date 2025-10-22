@@ -1,0 +1,3 @@
+#!/bin/sh
+
+./crt_proc &
